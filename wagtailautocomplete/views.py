@@ -57,7 +57,7 @@ def search(request):
         return HttpResponseBadRequest()
 
     try:
-        limit = int(request.GET.get('limit', 100))
+        limit = int(request.GET.get('limit', 250))
     except ValueError:
         return HttpResponseBadRequest()
 
